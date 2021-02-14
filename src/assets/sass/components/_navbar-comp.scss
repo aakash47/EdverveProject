@@ -1,0 +1,93 @@
+#navbar-component {
+    // max-width: 1366px;
+    height: 94px;
+    box-shadow: 3px 3px 14px $primary-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    nav {
+        width: 1366px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            .ml {
+                display: flex;
+                align-items: center;
+                position: relative;
+                // border: 1px solid black;
+                height: 33px;
+                svg {
+                    height: 100%;
+                    margin-right: 45px;
+                }
+                li {
+                    display: inline-block;
+                    margin-right: 30px;
+                    a {
+                        text-decoration: none;
+                        color: $primary-black;
+                        font-weight: bold;
+                    }
+                    .active:after {
+                        content: '';
+                        height: 3px;
+                        background-color: $primary-yellow;
+                        width: 50%;
+                        display: block;
+                    }
+                    select {
+                        font-family: 'Poppins', sans-serif;
+                        height: 33px;
+                        background-color: $primary-yellow;
+                        font-weight: bold;
+                        border-radius: 8px;
+                        border: none;
+                        padding: 0 10px;
+                        &:focus {
+                            outline: none;
+                            cursor: pointer;
+                        } 
+                        option {
+                            background-color: #fff;
+                            width: 2000px;
+                        }
+                    }
+                    .caret {
+                        display: inline-block;
+                        width: 0;
+                        height: 0;
+                        margin-left: 2px;
+                        vertical-align: middle;
+                        border-top: 4px dashed;
+                        border-top: 4px solid\9;
+                        border-right: 4px solid transparent;
+                        border-left: 4px solid transparent;
+                    }
+                }
+            }
+
+            .mr {
+                display: flex;
+                align-items: center;
+                svg {
+                    cursor: pointer;
+                }
+                button {
+                    padding: 7px 20px;
+                    margin-left: 30px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 8px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                .get-started-btn {background-color: $primary-grey;}
+                .login-btn {background-color: $primary-blue; color: #fff; padding: 7px 40px;}
+            }
+        }
+    }
+}

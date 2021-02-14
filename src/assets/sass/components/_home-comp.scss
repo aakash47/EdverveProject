@@ -1,0 +1,44 @@
+#home-comp {
+    display: flex;
+    justify-content: center;
+
+    .extra-div {
+      
+        width: 1366px;
+        // border: 1px solid black;
+
+
+        .man-think {
+            position: absolute;
+            top: 223px;
+            left: 801px;
+            width: 379px;
+            height: 388px;
+        }
+
+        .hero-text {
+              &:before {
+                    content: '';
+                    height: 13px;
+                    background-color: $primary-yellow;
+                    width: 20%;
+                    display: block;
+                }
+            position: absolute;
+            // border: 1px solid black;
+            top: 225px;
+            left: 139px;
+            width: 464px;
+            height: 224px;
+            width: 464px;
+            h1 {
+                font-size: 54px;
+                line-height: 60px;
+            }
+            .lorem-text-hero {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
