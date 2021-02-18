@@ -7,22 +7,25 @@
       <!-- <question1/> -->
       <!-- <question2/> -->
       <!-- <interest/> -->
-   
+   <!-- <socialDigital/> -->
     <router-view/>
-    <FooterAakash/>
+
+    <!-- <FooterAakash/> -->
   </div>
   </div>
 </template>
 
 <script>
 import Navbar from './components/NavbarComponent'
+// import socialDigital from './components/socialDigital'
 // import login1 from './components/login1'
 // import signup from './components/signup'
 // import question1 from './components/question1'
 // import question2 from './components/question2'
 // import interest from './components/interest'
 
-import FooterAakash from './components/FooterAakash.vue'
+// import FooterAakash from './components/FooterAakash.vue'
+
 
 export default {
   name: 'App',
@@ -33,7 +36,8 @@ export default {
     // question1,
       // question2,
       // interest,
-    FooterAakash,
+    // FooterAakash,
+    // socialDigital,
   
    
   }
